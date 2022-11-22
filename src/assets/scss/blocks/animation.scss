@@ -1,0 +1,66 @@
+@keyframes social {
+
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+};
+
+@keyframes bike {
+
+    0% {
+        position: relative;
+        right: -100%;
+    }
+
+    15% {
+        position: relative;
+        right: -70%;
+    }
+
+    25% {
+        position: relative;
+        right: -50%;
+    }
+
+    50% {
+        position: relative;
+        right: -30%;
+    }
+
+    75% {
+        position: relative;
+        right: -15%;
+    }
+
+    90% {
+        position: relative;
+        right: -5%;
+    }
+
+    95% {
+        position: relative;
+        right: -1%;
+    }
+
+    100% {
+        position: static;
+        right: 0;
+    }
+
+};

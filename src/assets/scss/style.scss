@@ -1,0 +1,105 @@
+@import "vars";
+@import "vendor/reset.scss";
+
+// .navbar-toggler , .navbar-toggler :hover,
+// .navbar-toggler :active,
+// .navbar-toggler :focus{
+//     border: none!important;
+// }
+
+//mixixns
+@import "boots/mixins/breakpoints";
+// @import "boots/mixins/container";
+// @import "boots/mixins/grid";
+@import "boots/mixins/border-radius";
+@import "boots/mixins/box-shadow";
+// @import "boots/mixins/buttons";
+// @import "boots/mixins/color-scheme";
+// @import "boots/mixins/reset-text";
+// @import "boots/mixins/gradients";
+@import "boots/mixins/transition";
+@import "boots/mixins/backdrop";
+// @import "boots/mixins/image";
+// @import "boots/mixins/deprecate";
+// @import "boots/mixins/caret";
+// @import "boots/mixins/clearfix";
+@import "boots/bootstrap-grid";
+
+// @import "boots/carousel";
+// @import "boots/buttons";
+@import "boots/transitions";
+// @import "boots/dropdown";
+
+// @import "boots/utilities/api";
+
+// @import "boots/vendor/rfs";
+
+@import "boots/modal";
+// @import "boots/nav";
+// @import "boots/navbar";
+@import "boots/close";
+
+
+
+
+@import "boots/bootstrap-utilities.scss";
+
+
+@import "boots/bootstrap-reboot.scss";
+
+body {
+
+    font-family: 'Grandstander', cursive;
+}
+
+html {
+    border: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,span {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.mycontainer {
+    padding: 0 5%;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Blocks */
+@import "blocks/main";
+@import "blocks/header";
+@import "blocks/fonts";
+@import "blocks/about";
+@import "blocks/animation";
+@import "blocks/skills";
+// @import "blocks/";
+// @import "blocks/";
+// @import "blocks/";
+// @import "blocks/";
+
+
+
+
+
+
+
+
+
+

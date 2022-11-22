@@ -1,0 +1,107 @@
+.expertise {
+    background-color: #9ea1e9cd;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.skill-name {
+    width: 10%;
+    padding-top: 21px;
+    font-size: 38px;
+    text-align: center;
+}
+
+.skill-ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.skill-li-hidden {
+    visibility: hidden;
+}
+
+.degree {
+    display: block;
+    transform: scale(-1, 1);
+    height: 100px;
+    width: 100px;
+}
+
+.skill-li {
+    animation: bike 3s linear normal 0s none;
+
+        &:not(:first-child) {
+            animation-delay: .1s;
+        }
+}
+
+.percent {
+    display: flex;
+    justify-content: space-between;
+    width: 82%;
+    margin: 0 0 0 200px;
+    padding-bottom: 30px;
+}
+
+.percent-item {
+    width: 200px;
+    position: relative;
+
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 1px;
+            top:15px;
+            background-color: $white;
+            width: 2px;
+            height: 770px;
+        }
+}
+
+.percent-span {
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: $white;
+    padding: 5px;
+    position: relative;
+    border: 1px solid #000;
+    border-radius: 3px;
+    box-shadow: 3px 3px 8px 4px #0000ff33;
+
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: -17px;
+            top: 4px;
+            display: block;
+            clip-path: polygon(25% 0%, 75% 0%, 75% 49%, 75% 100%, 25% 100%, 55% 49%);
+            width: 20px;
+            height: 27px;
+            background-color: $white;
+            border: 1px solid #000;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: -17px;
+            top: 4px;
+            display: block;
+            clip-path: polygon(25% 0%, 75% 0%, 75% 49%, 75% 100%, 25% 100%, 55% 49%);
+            width: 20px;
+            height: 27px;
+            background-color: $white;
+            transform: scale(-1, 1);
+            border: 1px solid #000;
+        }
+
+}

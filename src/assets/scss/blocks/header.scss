@@ -1,0 +1,107 @@
+.menu {
+    top: 0px;
+    position: fixed;
+    z-index: 9999999999;
+}
+
+.menu-inner {
+    width: 500px;
+    height: 500px;
+    border-bottom-left-radius: 100%;
+    background-color: $pink;
+}
+
+.nav-button {
+    position: fixed;
+    z-index: 9999999999;
+    right: 15px;
+    top: 15px;
+    background-color: $pink;
+    border-radius: 50%;
+    width: 81px;
+    height: 83px;
+    border:none;
+
+        &:visited {
+            transform: rotate(24deg);
+        }
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    height: 6px;
+    background: $white;
+    border-radius: 10px;
+    width: 45px;    
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -14px;
+            left: 0px;
+            right: 0px;
+            margin: 0 auto;
+            height: 6px;
+            background: $white;
+            border-radius: 10px;
+            width: 45px;    
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 14px;
+            left: 0px;
+            right: 0px;
+            margin: 0 auto;
+            height: 6px;
+            background: $white;
+            border-radius: 10px;
+            width: 45px;    
+        }
+}
+
+.menu-list {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-list_li {
+    font-size: 35px;
+    line-height: 60px;
+    color: $white;
+    letter-spacing: 1px;
+}
+
+.menu-li-link {
+
+    &:hover {
+        color: inherit;
+        text-decoration-line: underline;
+        text-decoration-style: wavy;
+        text-decoration-color: $white;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 6px;
+    }
+}
