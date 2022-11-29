@@ -371,7 +371,7 @@ textarea {
 :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
-    --bs-purple: #6f42c1;
+    --bs-purple: #9ea1e9cd;
     --bs-pink: #f3a6ad;
     --bs-red: #dc3545;
     --bs-orange: #fd7e14;
@@ -11622,7 +11622,7 @@ textarea {
 :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
-    --bs-purple: #6f42c1;
+    --bs-purple: #9ea1e9cd;
     --bs-pink: #f3a6ad;
     --bs-red: #dc3545;
     --bs-orange: #fd7e14;
@@ -12245,6 +12245,10 @@ header {
     letter-spacing: 1px;
 }
 
+.menu-li-link {
+    transition: 1s linear;
+}
+
 .menu-li-link:hover {
     color: inherit;
     -webkit-text-decoration-line: underline;
@@ -12391,77 +12395,28 @@ header {
     }
 }
 
-@-webkit-keyframes bike {
-    0% {
-        right: -100%;
-    }
-
-    50% {
-        right: 50%;
-    }
-
-    100% {
-        right: 0;
-    }
-}
-
-@keyframes bike {
-    0% {
-        right: -100%;
-    }
-
-    50% {
-        right: 50%;
-    }
-
-    100% {
-        right: 0;
-    }
-}
-
 .expertise {
     background-color: #9ea1e9cd;
+    padding-bottom: 100px;
 }
 
-.skill {
+.expertise-container {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    padding-bottom: 40px;
-    text-transform: uppercase;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: end;
+    align-items: flex-end;
 }
 
-.skill-name {
-    width: 10%;
-    padding-top: 21px;
-    font-size: 38px;
-    text-align: center;
-}
-
-.skill-ul {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
-    width: 90%;
-}
-
-.skill-li-hidden {
+.degree-li-hidden {
     visibility: hidden;
 }
 
 .degree {
     display: block;
-    -webkit-transform: scale(-1, 1);
-    transform: scale(-1, 1);
     height: 100px;
     width: 100px;
-}
-
-.skill-li {
-    -webkit-animation: bike 1s linear infinite normal running 0s none;
-    animation: bike 1s linear infinite normal running 0s none;
 }
 
 .percent {
@@ -12469,9 +12424,7 @@ header {
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 82%;
-    margin: 0 0 0 200px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 .percent-item {
@@ -12494,7 +12447,7 @@ header {
     display: inline-block;
     text-transform: uppercase;
     background-color: #fff;
-    padding: 5px;
+    padding: 7px 12px 5px;
     position: relative;
     border: 1px solid #000;
     border-radius: 3px;
@@ -12529,4 +12482,114 @@ header {
     -webkit-transform: scale(-1, 1);
     transform: scale(-1, 1);
     border: 1px solid #000;
+}
+
+.skill-ul {
+    width: 15%;
+}
+
+.degree-ul {
+    width: 16.66667%;
+}
+
+.degree-ul,
+.skill-ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.skill-name {
+    height: 143px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 38px;
+    text-transform: uppercase;
+}
+
+.skill-name:first-child {
+    padding-top: 28px;
+}
+
+.skill-inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.degree-li {
+    padding: 20px 0;
+}
+
+.skill-about {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.skill-image {
+    display: block;
+    height: 450px;
+    position: relative;
+    z-index: 5;
+}
+
+.skill-text {
+    text-align: center;
+    font-size: 18px;
+}
+
+.portfolio {
+    background: linear-gradient(0deg, white 0%, white 50%, #b0b2f0 100%);
+    text-align: center;
+}
+
+.portfolio-title {
+    font-size: 52px;
+    padding: 40px 0 70px 0;
+}
+
+.portfolio-inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.portfolio-item {
+    text-align: center;
+}
+
+.portfolio-link {
+    display: block;
+    height: 200px;
+    width: 300px;
+    margin: 0 auto 20px auto;
+    transition: .5s ease-in-out;
+}
+
+.portfolio-link:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.portfolio-img {
+    height: 190px;
+    width: 300px;
+}
+
+.portfolio-img_sm {
+    width: 200px;
 }

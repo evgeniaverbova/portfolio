@@ -1,0 +1,40 @@
+.portfolio {
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(176,178,240,1) 100%);
+    text-align: center;
+}
+
+.portfolio-title {
+    font-size: 52px;
+    letter-spacing: 5px;
+    padding: 40px 0 100px 0;
+}
+
+.portfolio-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio-item {
+    text-align: center;
+}
+
+.portfolio-link {
+    display: block;
+    height: 200px;
+    width: 300px;
+    margin: 0 auto 20px auto;
+    transition: .5s ease-in-out;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+}
+
+.portfolio-img {
+    height: 190px;
+    width: 300px;
+
+        &_sm {
+            width: 200px;
+        }
+}

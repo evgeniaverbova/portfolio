@@ -95,7 +95,7 @@ header {
 }
 
 .menu-li-link {
-
+    transition: 1s linear;
     &:hover {
         color: inherit;
         text-decoration-line: underline;
